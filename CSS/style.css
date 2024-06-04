@@ -1,0 +1,195 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #88b0c0; /* Slight change in background color */
+    color: #000;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; /* Increased padding for better spacing */
+}
+
+.logo img {
+    width: 120px; /* Slightly larger logo */
+}
+
+#menu {
+    display: flex;
+    align-items: center; /* Center align menu items */
+}
+
+#menu .item {
+    margin-right: 30px; /* Increased spacing between menu items */
+}
+
+#banner {
+    text-align: center; /* Center align banner content */
+    padding: 60px 0; /* Increased padding for better spacing */
+    border-bottom: 2px solid #1c739b; /* Thicker border */
+}
+
+#wp-products {
+    padding: 60px 0; /* Increased padding for better spacing */
+}
+
+.list-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Better distribution of product items */
+}
+
+.item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px; /* Increased margin bottom for better separation */
+    background-color: #723f3f; /* White background for product items */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.item img {
+    width: 50%;
+    border-radius: 100px; /* Rounded corners for images */
+}
+
+.stars {
+    display: flex;
+    margin-bottom: 20px; /* Reduced margin bottom for stars */
+    height: auto;
+    width: auto;
+}
+.stars span {
+    margin-bottom: 5px; /* Khoảng cách giữa các ngôi sao */
+    font-size: 50px; /* Tăng kích thước của ngôi sao */
+}
+.price {
+    font-weight: bold;
+    color: #000000; /* Changed price color to orange */
+}
+
+#footer {
+    padding: 60px 0;
+    background-color: #5E615E; /* Darker background color for footer */
+    color: #fff;
+}
+
+#footer .box {
+    padding-right: 30px; /* Adjusted padding for better alignment */
+}
+
+#footer .box h3 {
+    margin-bottom: 30px; /* Reduced margin bottom for footer headings */
+}
+
+.quick-menu .item {
+    margin-right: 30px; /* Increased spacing between quick menu items */
+}
+
+.quick-menu .item a {
+    color: #fff; /* White color for quick menu links */
+}
+
+.quick-menu .item a:hover {
+    color: #000000; /* Orange color on hover for quick menu links */
+}
+
+form input[type="text"] {
+    width: 250px; /* Slightly wider input field */
+    padding: 10px; /* Increased padding for better input field appearance */
+    margin-bottom: 20px;
+    border-radius: 5px; /* Rounded corners for input field */
+    border: 1px solid #ccc; /* Light border for input field */
+}
+
+form button {
+    padding: 10px 20px; /* Increased padding for button */
+    background-color: #ff4500; /* Orange background color for button */
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e63900; /* Darker orange color on hover for button */
+}
+
+.box-right {
+    display: flex;
+}
+
+.product-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    overflow: hidden; /* Ẩn phần ngoài của hình ảnh để sử dụng cho hiệu ứng */
+    position: relative; /* Cần thiết để làm việc với vị trí tuyệt đối */
+}
+
+.product-img img {
+    width: 100%; /* Đảm bảo rằng hình ảnh sẽ lấp đầy phần tử cha */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Hiệu ứng chuyển động và mờ */
+}
+
+.product-img:hover img {
+    transform: scale(1.1); /* Phóng to hình ảnh khi rê chuột qua */
+    filter: brightness(70%); /* Mờ đi hình ảnh khi rê chuột qua */
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+    opacity: 0; /* Ẩn overlay ban đầu */
+    transition: opacity 0.3s ease; /* Hiệu ứng mờ dần */
+}
+
+.product-img:hover .product-overlay {
+    opacity: 1; /* Hiển thị overlay khi rê chuột qua */
+    transition-delay: 0.2s; /* Đảm bảo rằng overlay hiển thị sau khi hình ảnh đã phóng to */
+}
+
+.product-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000000;
+    opacity: 0; /* Ẩn nội dung ban đầu */
+    transition: opacity 0.3s ease; /* Hiệu ứng mờ dần */
+}
+
+.product-img:hover .product-overlay-content {
+    opacity: 1; /* Hiển thị nội dung khi rê chuột qua */
+}
+.comment-img {
+    width: 50px; /* Điều chỉnh kích thước hình ảnh */
+    height: 50px; /* Điều chỉnh kích thước hình ảnh */
+    border-radius: 50%; /* Làm tròn viền của hình ảnh thành hình tròn */
+    overflow: hidden; /* Ẩn phần ngoài của hình ảnh */
+}
+
+
+

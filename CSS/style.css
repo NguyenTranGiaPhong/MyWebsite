@@ -41,7 +41,7 @@ body {
 #banner {
     text-align: center; /* Center align banner content */
     padding: 60px 0; /* Increased padding for better spacing */
-    border-bottom: 2px solid #1e90ff; /* Thicker border */
+    border-bottom: 2px solid #FFFDD0; /* Thicker border */
 }
 
 #wp-products {
@@ -57,7 +57,7 @@ body {
 .item {
     width: calc(33.33% - 20px);
     margin-bottom: 40px; /* Increased margin bottom for better separation */
-    background-color: #1e90ff; /* White background for product items */
+    background-color: #FFFDD0; /* White background for product items */
     padding: 30px;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
@@ -80,7 +80,7 @@ body {
 }
 .price {
     font-weight: bold;
-    color: #1e90ff; /* Changed price color to orange */
+    color: #FFFDD0; /* Changed price color to orange */
 }
 
 #footer {
